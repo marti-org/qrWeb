@@ -1,0 +1,13 @@
+{block content}
+
+<a n:href="Post:create" n:if="$user->loggedIn">Vytvořit příspěvek</a>
+
+<h1 n:block="title">Můj úžasný blog</h1>
+
+{foreach $products as $product}
+<div class="product">
+
+    <h2><a href="{link Post:show $product->id}">{$product->name}</a></h2>
+
+</div>
+{/foreach}
