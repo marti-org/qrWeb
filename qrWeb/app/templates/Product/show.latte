@@ -1,0 +1,18 @@
+{block content}
+<h1 n:block="title">{$product->name}</h1>
+<div class="post">{$product->description}</div>
+
+<h2>User experiences with product</h2>
+
+<div class="experiences">
+    {foreach $experiences as $experience}
+    <p><b>{$experience->user}</b> napsal:</p>
+    <div>{$experience->text}</div>
+    {/foreach}
+</div>
+
+<h2>Insert new comment of product</h2>
+
+{control experienceForm}
+
+<p><a n:href="Homepage:default">← Back to search page</a></p>

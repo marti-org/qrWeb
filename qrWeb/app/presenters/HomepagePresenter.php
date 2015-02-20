@@ -32,7 +32,7 @@ class HomepagePresenter extends BasePresenter
     public function searchFormSucceeded($form, $values)
     {
         // ..
-        $this->flashMessage('Nalezeno');
+        $this->flashMessage('Finded 2 product');
         //$this->redirect('Homepage:', array("id_grammar", 123));
         $this->redirect("Search:list", array("search" => $values->toSearch));
     }
