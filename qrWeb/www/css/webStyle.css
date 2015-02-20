@@ -1,0 +1,27 @@
+#searchPage{
+    width: 640px;
+    text-align: center;
+}
+
+#searchForm{
+    width: 500px;
+    text-align:right;
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+
+#tags{
+    width: 500px;
+}
+
+#btnFind{
+
+    margin-left:0px;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+}

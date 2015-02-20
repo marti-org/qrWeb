@@ -28,6 +28,7 @@ class ProductPresenter extends BasePresenter
             $this->error('Stránka nebyla nalezena');
         }
         $this->template->product = $product;
+        $this->template->stars = (($product->plus-$product->minus)/($product->plus+$product->minus))*5;
 
         $this->template->experiences = $product->related('experience')->order('created_at');
     }

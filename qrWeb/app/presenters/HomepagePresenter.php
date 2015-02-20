@@ -21,8 +21,11 @@ class HomepagePresenter extends BasePresenter
     {
         $form = new Form;
         $form->addText('toSearch')
-            ->setAttribute('id', 'tags');
-        $form->addSubmit('find', 'Find');
+            ->setAttribute('id', 'tags')
+            ->setAttribute('class','center')
+        ;
+        $form->addSubmit('find', 'Find')
+            ->setAttribute('id','btnFind');
 
         $form->onSuccess[] = array($this, 'searchFormSucceeded');
         return $form;

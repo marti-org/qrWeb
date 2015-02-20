@@ -1,5 +1,29 @@
 {block content}
 <h1 n:block="title">{$product->name}</h1>
+
+<script src="{$basePath}/js/jRate.js"></script>
+<div id="jRate" style="height:50px;width: 200px;"></div>
+star: {$stars}
+<script type="text/javascript">
+    $(function () {
+        var that = this;
+        $("#jRate").jRate({
+            rating: {$stars},
+            strokeColor: 'black',
+            width: 30,
+            height: 30,
+            readOnly: true,
+            onChange: function(rating) {
+                console.log("OnChange: Rating: "+rating);
+            },
+            onSet: function(rating) {
+                console.log("OnSet: Rating: "+rating);
+            }
+        });
+
+    });
+</script>
+
 <div class="post">{$product->description}</div>
 
 <h2>User experiences with product</h2>

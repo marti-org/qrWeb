@@ -1,12 +1,14 @@
 {block content}
-<h1>Qr code web pages</h1>
 
-<div class="ui-widget">
-    <label for="tags"> </label>
+<div class="center" id="searchPage">
+    <h1>Qr code web pages</h1>
 
+    <div class="ui-widget center" id="searchForm">
+        <label for="tags"> </label>
+    {control searchForm}
+    </div>
 
-{control searchForm}
+    <div id="player"></div>
+
 </div>
-
-<div id="player"></div>
 <script src="{$basePath}/js/playYoutube.js"></script>
