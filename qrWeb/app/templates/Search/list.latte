@@ -2,12 +2,12 @@
 
 <a n:href="Post:create" n:if="$user->loggedIn">Vytvořit příspěvek</a>
 
-<h1 n:block="title">Můj úžasný blog</h1>
+<h1 n:block="title">Finded product</h1>
 
 {foreach $products as $product}
 <div class="product">
 
-    <h2><a href="{link Post:show $product->id}">{$product->name}</a></h2>
+    <h2><a href="{link Product:show $product->id}">{$product->name}</a></h2>
 
 </div>
 {/foreach}

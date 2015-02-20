@@ -20,8 +20,10 @@ class HomepagePresenter extends BasePresenter
     protected function createComponentSearchForm()
     {
         $form = new Form;
-        $form->addText('toSearch');
+        $form->addText('toSearch')
+            ->setAttribute('id', 'tags');
         $form->addSubmit('find', 'Find');
+
         $form->onSuccess[] = array($this, 'searchFormSucceeded');
         return $form;
     }
