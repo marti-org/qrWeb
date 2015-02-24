@@ -1,42 +1,46 @@
 {block content}
-<h1 n:block="title">{$product->name}</h1>
+<div class="productPage">
+    <h1 n:block="title">{$product->name}</h1>
 
-<script src="{$basePath}/js/jRate.js"></script>
-<div id="jRate" style="height:50px;width: 200px;"></div>
-star: {$stars}
-<script type="text/javascript">
-    $(function () {
-        var that = this;
-        $("#jRate").jRate({
-            rating: {$stars},
-            strokeColor: 'black',
-            width: 30,
-            height: 30,
-            readOnly: true,
-            onChange: function(rating) {
-                console.log("OnChange: Rating: "+rating);
-            },
-            onSet: function(rating) {
-                console.log("OnSet: Rating: "+rating);
-            }
+    <script src="{$basePath}/js/jRate.js"></script>
+    <div id="jRate" style="height:50px;width: 200px;"></div>
+
+    <script type="text/javascript">
+        $(function () {
+            var that = this;
+            $("#jRate").jRate({
+                rating: {$stars},
+                strokeColor: 'black',
+                width: 30,
+                height: 30,
+                readOnly: false,
+                onChange: function(rating) {
+                    console.log("OnChange: Rating: "+rating);
+                },
+                onSet: function(rating) {
+                    console.log("OnSet: Rating: "+rating);
+                }
+            });
+
         });
+    </script>
 
-    });
-</script>
+    <div class="ProductDescription">{$product->description}</div>
 
-<div class="post">{$product->description}</div>
+    <h2>User experiences with product</h2>
 
-<h2>User experiences with product</h2>
+    <div class="experiences">
+        {foreach $experiences as $experience}
+        <p><b>{$experience->user}</b> napsal:</p>
+        <div>{$experience->text}</div>
+        <hr>
+        {/foreach}
+    </div>
 
-<div class="experiences">
-    {foreach $experiences as $experience}
-    <p><b>{$experience->user}</b> napsal:</p>
-    <div>{$experience->text}</div>
-    {/foreach}
+    <h2>Insert new comment of product</h2>
+
+    {control experienceForm}
+
+    <p><a n:href="Homepage:default">← Back to search page</a></p>
+
 </div>
-
-<h2>Insert new comment of product</h2>
-
-{control experienceForm}
-
-<p><a n:href="Homepage:default">← Back to search page</a></p>

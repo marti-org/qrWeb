@@ -19,6 +19,17 @@
     margin-left:0px;
 }
 
+.productPage{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.ProductDescription{
+    text-align:justify;
+}
+
 .center{
     margin-left: auto;
     margin-right: auto;

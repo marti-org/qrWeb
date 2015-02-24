@@ -24,3 +24,10 @@ nette:
 services:
 	- App\Model\UserManager
 	router: App\RouterFactory::createRouter
+
+database:
+	dsn: 'mysql:host=127.0.0.1;dbname=czmarti-org'
+	user: czmarti-org
+	password: B6966AF94D
+	options:
+		lazy: yes
