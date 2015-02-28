@@ -22,9 +22,9 @@ public class DisplayMessageActivity extends ActionBarActivity {
         Intent intent = getIntent();
         String name = intent.getStringExtra(MyActivity.EXTRA_NAME);
 
-
         TextView txvName = (TextView) findViewById(R.id.txvHellou);
-        txvName.setText("mytext");
+        String hellouMsg = "Hellou " + txvName.toString();
+        txvName.setText(hellouMsg);
 
 
         //txvName.setTextSize(40);

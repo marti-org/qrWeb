@@ -5,6 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 
@@ -19,7 +20,16 @@ public class TestActivity extends ActionBarActivity {
         String name = intent.getStringExtra(MyActivity.EXTRA_NAME);
 
         TextView txvName = (TextView) findViewById(R.id.txvHellou);
-        txvName.setText("my long text");
+        String helloMsg = "Hello " + name;
+        txvName.setText(helloMsg);
+
+
+        String like = intent.getStringExtra(MyActivity.EXTRA_LIKE);
+        String dislike = intent.getStringExtra(MyActivity.EXTRA_DISLIKE);
+
+        TextView txvMessage = (TextView) findViewById(R.id.txvMessage);
+        String message = "I see that you like "+like+" and you don't like "+dislike;
+        txvMessage.setText(message);
 
     }
 
@@ -46,5 +56,10 @@ public class TestActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void goBack(View view){
+        Intent intent = new Intent(this,MyActivity.class);
+        startActivity(intent);
     }
 }
