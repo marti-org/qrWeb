@@ -10,4 +10,5 @@
     <string name="txvName">Name</string>
     <string name="txvLike">Like</string>
     <string name="txvDislike">Dislike</string>
+    <string name="btnBack">Back</string>
 </resources>

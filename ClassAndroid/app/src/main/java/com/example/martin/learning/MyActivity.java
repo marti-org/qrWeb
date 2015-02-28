@@ -60,7 +60,7 @@ public class MyActivity extends ActionBarActivity {
         EditText edLike = (EditText) findViewById(R.id.edLike);
         String like = edLike.getText().toString();
         intent.putExtra(EXTRA_LIKE,like);
-        
+
         EditText edDislike = (EditText) findViewById(R.id.edDislike);
         String dislike = edDislike.getText().toString();
         intent.putExtra(EXTRA_DISLIKE,dislike);
