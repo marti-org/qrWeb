@@ -45,7 +45,8 @@ public class MyActivity extends ActionBarActivity {
     }
 
     /**
-     * This method open new screen
+     * This method open new screen TestActivity
+     * creating EXTRA_PARAM for sending variables to new screan
      * @param view
      */
     public void sendMessage(View view){

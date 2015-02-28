@@ -58,6 +58,11 @@ public class TestActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * This metod change actual screan to main screan
+     * @param view
+     *
+     */
     public void goBack(View view){
         Intent intent = new Intent(this,MyActivity.class);
         startActivity(intent);
