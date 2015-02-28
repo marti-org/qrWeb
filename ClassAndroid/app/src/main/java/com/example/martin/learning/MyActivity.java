@@ -12,9 +12,9 @@ import android.widget.EditText;
 public class MyActivity extends ActionBarActivity {
 
     //public final static String EXTRA_NAME = "com.example.martin.learning.MESSAGE";
-    public final static String EXTRA_NAME = "";
-    public final static String EXTRA_LIKE = "";
-    public final static String EXTRA_DISLIKE = "";
+    public final static String EXTRA_NAME = "a";
+    public final static String EXTRA_LIKE = "b";
+    public final static String EXTRA_DISLIKE = "c";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +51,8 @@ public class MyActivity extends ActionBarActivity {
      */
     public void sendMessage(View view){
 
-        Intent intent = new Intent(this,DisplayMessageActivity.class);
+        Intent intent = new Intent(this,TestActivity.class);
+
 
         EditText edName = (EditText) findViewById(R.id.edName);
         String name = edName.getText().toString();
@@ -64,6 +65,8 @@ public class MyActivity extends ActionBarActivity {
         EditText edDislike = (EditText) findViewById(R.id.edDislike);
         String dislike = edDislike.getText().toString();
         intent.putExtra(EXTRA_DISLIKE,dislike);
+
+
         startActivity(intent);
 
     }

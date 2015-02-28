@@ -5,53 +5,33 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.EditText;
 import android.widget.TextView;
 
-import static com.example.martin.learning.R.id.*;
 
-
-public class DisplayMessageActivity extends ActionBarActivity {
+public class TestActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_message);
-
+        setContentView(R.layout.activity_test);
 
         Intent intent = getIntent();
         String name = intent.getStringExtra(MyActivity.EXTRA_NAME);
 
-
         TextView txvName = (TextView) findViewById(R.id.txvHellou);
-        txvName.setText("mytext");
+        txvName.setText("my long text");
 
-
-        //txvName.setTextSize(40);
-        //txvName.setText("Muj text");
-
-        /*
-        TextView txvName = (TextView) findViewById(R.id.txvHellou);
-
-        txvName.setText(name);
-        */
-
-        /*
-        TextView textView = new TextView(this);
-        textView.setTextSize(40);
-        textView.setText(message);
-        setContentView(textView);
-        */
     }
 
 
+    /*
     @Override
-         public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_display_message, menu);
+        getMenuInflater().inflate(R.menu.menu_test, menu);
         return true;
     }
-
+    */
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -61,7 +41,7 @@ public class DisplayMessageActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == action_settings) {
+        if (id == R.id.action_settings) {
             return true;
         }
 
