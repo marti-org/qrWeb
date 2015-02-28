@@ -14,7 +14,7 @@ public class DisplayMessageActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
+        String message = intent.getStringExtra(MyActivity.EXTRA_NAME);
         TextView textView = new TextView(this);
         textView.setTextSize(40);
         textView.setText(message);
