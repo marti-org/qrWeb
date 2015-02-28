@@ -49,9 +49,9 @@ public class MyActivity extends ActionBarActivity {
     public void sendMessage(View view){
 
         Intent intent = new Intent(this,DisplayMessageActivity.class);
-        EditText editText = (EditText) findViewById(R.id.edit_message);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,message);
+        EditText edName = (EditText) findViewById(R.id.edName);
+        String name = edName.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE,name);
         startActivity(intent);
 
     }

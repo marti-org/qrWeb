@@ -7,4 +7,7 @@
     <string name="button_send">Send</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_display_message">DisplayMessageActivity</string>
+    <string name="txvName">Name</string>
+    <string name="txvLike">Like</string>
+    <string name="txvDislike">Dislike</string>
 </resources>
