@@ -11,10 +11,9 @@ import android.widget.EditText;
 
 public class MyActivity extends ActionBarActivity {
 
-    //public final static String EXTRA_NAME = "com.example.martin.learning.MESSAGE";
-    public final static String EXTRA_NAME = "a";
-    public final static String EXTRA_LIKE = "b";
-    public final static String EXTRA_DISLIKE = "c";
+    public final static String EXTRA_NAME = "com.example.martin.learning.NAME";
+    public final static String EXTRA_LIKE = "com.example.martin.learning.LIKE";
+    public final static String EXTRA_DISLIKE = "com.example.martin.learning.DISLIKE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
