@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="TextStoryApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TextStoryApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image x:Name="img_viewer" HorizontalAlignment="Left" Height="358" Margin="79,54,0,0" VerticalAlignment="Top" Width="787" DragEnter="img_viewer_DragEnter"/>
+        <Button x:Name="btnInsetPicture" Content="Button" HorizontalAlignment="Left" Margin="349,454,0,0" VerticalAlignment="Top" Click="btnInsetPicture_Click"/>
+    </Grid>
+
+
+</Page>

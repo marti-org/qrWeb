@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MARTIN-NTB</Machine>
+    <WindowsUser>Martin</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>4a2882cb-19de-40b3-9c29-5914fec3fbc2</PackageIdentityName>
+    <RegisteredManifestChecksum>DAF773024130BFAB6C901E6538DECB4275871814EB655C12E5158C1C2587EA51</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>4a2882cb-19de-40b3-9c29-5914fec3fbc2_1.0.0.0_neutral__n6fhnfby9ccnm</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>4a2882cb-19de-40b3-9c29-5914fec3fbc2_n6fhnfby9ccnm!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>4a2882cb-19de-40b3-9c29-5914fec3fbc2</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Martin</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Martin\Documents\GitHub\qrWeb\ClassWindows\TextStoryApp\TextStoryApp\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-02T17:06:53.883</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Martin\Documents\GitHub\qrWeb\ClassWindows\TextStoryApp\TextStoryApp\bin\Debug\TextStoryApp.exe">
+      <PackagePath>TextStoryApp.exe</PackagePath>
+      <Modified>2015-03-02T18:16:50.427</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Martin\Documents\GitHub\qrWeb\ClassWindows\TextStoryApp\TextStoryApp\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T05:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Martin\Documents\GitHub\qrWeb\ClassWindows\TextStoryApp\TextStoryApp\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T05:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Martin\Documents\GitHub\qrWeb\ClassWindows\TextStoryApp\TextStoryApp\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T05:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Martin\Documents\GitHub\qrWeb\ClassWindows\TextStoryApp\TextStoryApp\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T05:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Martin\Documents\GitHub\qrWeb\ClassWindows\TextStoryApp\TextStoryApp\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-03-02T16:56:10.673</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Martin\Documents\GitHub\qrWeb\ClassWindows\TextStoryApp\TextStoryApp\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-03-02T18:16:49.924</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Martin\Documents\GitHub\qrWeb\ClassWindows\TextStoryApp\TextStoryApp\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-03-02T17:06:53.759</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
