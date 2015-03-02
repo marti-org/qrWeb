@@ -1,0 +1,1 @@
+C:\Users\Martin\Documents\GitHub\qrWeb\ClassWindows\TextStoryApp\TextStoryApp\TextStoryApp.csproj;neutral

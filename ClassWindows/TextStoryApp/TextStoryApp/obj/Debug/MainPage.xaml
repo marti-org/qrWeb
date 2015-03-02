@@ -7,9 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Image x:ConnectionId='0' x:Name="img_viewer" HorizontalAlignment="Left" Height="358" Margin="79,54,0,0" VerticalAlignment="Top" Width="787"                                 />
-        <Button x:ConnectionId='0' x:Name="btnInsetPicture" Content="Button" HorizontalAlignment="Left" Margin="349,454,0,0" VerticalAlignment="Top"                              />
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" RenderTransformOrigin="-1.355,-0.43" Margin="10,0,0,47">
+            <StackPanel x:Name="myStackpanel" Orientation="Vertical">
+
+            </StackPanel>
+        </ScrollViewer>
+        <Button x:ConnectionId='0' x:Name="btnInsetPicture" Content="Take photo" HorizontalAlignment="Left" Margin="7,723,-3,0" VerticalAlignment="Top"                               Width="1362"/>
     </Grid>
 
 
