@@ -52,7 +52,9 @@ namespace TextStoryApp
         /// </summary>
         private void createNewGrid()
         {
+
             
+
             // Create the Grid
             newGrid = new Grid();
             newGrid.HorizontalAlignment = HorizontalAlignment.Left;
@@ -94,10 +96,21 @@ namespace TextStoryApp
             capture.PhotoSettings.CroppedAspectRatio = new Size(16, 9);
             StorageFile file = await capture.CaptureFileAsync(CameraCaptureUIMode.Photo);
             IRandomAccessStream filestream = await file.OpenAsync(FileAccessMode.Read);
+
             BitmapImage img = new BitmapImage();
+
+            var bounds = Window.Current.Bounds;
+            double pageWidth = bounds.Width;
+            double pageHeight = bounds.Height;
+
+            
+        
             img.SetSource(filestream);
+            
 
             Image img_viewer = new Image();
+            img_viewer.Width = (pageWidth / 2)-10;
+            img_viewer.Height = (pageHeight / 2) -60;
             img_viewer.Source = img;
             
             //Insert photo into grid
@@ -121,6 +134,7 @@ namespace TextStoryApp
                
             }
 
+            
 
             //myGrid.Children.Add(img_viewerN);
             if (!lastImgOnLeft)

@@ -23,7 +23,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Martin\Documents\GitHub\qrWeb\ClassWindows\TextStoryApp\TextStoryApp\bin\Debug\TextStoryApp.exe">
       <PackagePath>TextStoryApp.exe</PackagePath>
-      <Modified>2015-03-02T23:07:13.089</Modified>
+      <Modified>2015-03-03T00:02:21.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI.winmd">
       <PackagePath>Microsoft.Advertising.WinRT.UI.winmd</PackagePath>
@@ -75,11 +75,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Martin\Documents\GitHub\qrWeb\ClassWindows\TextStoryApp\TextStoryApp\bin\Debug\InputMessageDialog.xbf">
       <PackagePath>InputMessageDialog.xbf</PackagePath>
-      <Modified>2015-03-02T21:59:26.960</Modified>
+      <Modified>2015-03-02T23:44:53.078</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Martin\Documents\GitHub\qrWeb\ClassWindows\TextStoryApp\TextStoryApp\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-03-02T23:07:12.537</Modified>
+      <Modified>2015-03-02T23:44:53.084</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Martin\Documents\GitHub\qrWeb\ClassWindows\TextStoryApp\TextStoryApp\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
