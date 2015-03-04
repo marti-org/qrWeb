@@ -19,6 +19,7 @@
     <string name="txvTopic">Topic</string>
     <string name="txvAgeGroup">Age group</string>
     <string name="txvLicence">Licence</string>
+    <string name="txvTag">Tag</string>
     <string name="txvLevel">Level of engagement</string>
     <string name="title_activity_chapter_one">ChapterOneActivity</string>
     <string name="chapterOne">Chapter 1</string>
@@ -26,4 +27,27 @@
     <string name="myNotes">Your Notes</string>
     <string name="title_activity_sub_chapter_one">subChapterOneActivity</string>
     <string name="SubChapterOneText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod convallis dui, vitae tincidunt dolor efficitur gravida. Maecenas sed lorem et dui venenatis commodo. Quisque ut tempus felis, sit amet porttitor augue. Praesent pharetra id ipsum vitae posuere. Pellentesque dapibus, dui sed tincidunt accumsan, arcu urna finibus turpis, ac cursus arcu sapien id sem. Etiam tempus dolor in tortor scelerisque faucibus.</string>
+    <string name="SugestedColection">Sugested colection</string>
+    <string name="colectionName">Colection Name</string>
+    <string name="colectionCount1">(40)</string>
+    <string name="colectionCount2">(65)</string>
+    <string name="colectionCount3">(124)</string>
+    <string name="SugestedResources">Sugested learning resouses</string>
+    <string name="ResourcesName">Learning resouces name</string>
+    <string name="Tools">Tools</string>
+    <string name="Branch">Branch colection</string>
+    <string name="Copy">Copy colection</string>
+    <string name="Share">Share colection</string>
+    <string name="Version">Version history</string>
+    <string name="title_activity_learning_resouce">LearningResouceActivity</string>
+    <string name="learningResouces">Learning Resouces</string>
+    <string name="txvAutor">Author</string>
+    <string name="txvAutorName">Mari Maasikas</string>
+    <string name="txvDate">Date created</string>
+    <string name="txvDateGet">1.1.2015</string>
+    <string name="shortText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod convallis dui, vitae</string>
+    <string name="getAge">14-15</string>
+    <string name="txvRepository">Repository</string>
+    <string name="getRepository">Colienmu</string>
+
 </resources>
