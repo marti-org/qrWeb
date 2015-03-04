@@ -30,6 +30,14 @@
             android:name=".subChapterOneActivity"
             android:label="@string/title_activity_sub_chapter_one" >
         </activity>
+        <activity
+            android:name=".LearningResouceActivity"
+            android:label="@string/title_activity_learning_resouce" >
+        </activity>
+        <activity
+            android:name=".ShareActivity"
+            android:label="@string/title_activity_share" >
+        </activity>
     </application>
 
 </manifest>

@@ -49,5 +49,14 @@
     <string name="getAge">14-15</string>
     <string name="txvRepository">Repository</string>
     <string name="getRepository">Colienmu</string>
+    <string name="title_activity_share">ShareActivity</string>
+    <string name="sharing">Sharing</string>
+    <string name="acesss">Acess</string>
+    <string name="rbtnPublic">Public</string>
+    <string name="rbtnPrivate">Pripvate</string>
+    <string name="rbtnAcessible">Accessible with link</string>
+    <string name="addUser">Add user</string>
+    <string name="shareWith">Share with a class</string>
+    <string name="postToSocial">Postu tu social network</string>
 
 </resources>

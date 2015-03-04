@@ -17,6 +17,7 @@ import android.widget.Spinner;
 
 import android.net.Uri;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.VideoView;
 
 
@@ -78,6 +79,18 @@ public class MainActivity extends ActionBarActivity {
     public void showChapterOne(View view) {
 
         Intent intent = new Intent(this, ChapterOneActivity.class);
+        startActivity(intent);
+    }
+
+    public void showLearningSource(View view) {
+
+        Intent intent = new Intent(this, LearningResouceActivity.class);
+        startActivity(intent);
+    }
+
+    public void showShare(View view) {
+
+        Intent intent = new Intent(this, ShareActivity.class);
         startActivity(intent);
     }
 
