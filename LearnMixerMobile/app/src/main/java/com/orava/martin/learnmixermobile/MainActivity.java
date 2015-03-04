@@ -28,16 +28,19 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Spinerfor subject
         Spinner dropdownSubject = (Spinner)findViewById(R.id.spinnerSubject);
         String[] itemsSubject = new String[]{"Choose subject", "Biographh", "Phyzic", "Mathematic"};
         ArrayAdapter<String> adapterSubject = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, itemsSubject);
         dropdownSubject.setAdapter(adapterSubject);
 
+        //Spinerfor licence
         Spinner dropdownLicence = (Spinner)findViewById(R.id.spinnerLicence);
         String[] itemsLicence = new String[]{"All right reserved", "Attribution alone", "Attribution + ShareAlike", "Attribution + NonComercial"};
         ArrayAdapter<String> adapterLicence = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, itemsLicence);
         dropdownLicence.setAdapter(adapterLicence);
 
+        //Spiner for Level
         Spinner dropdownLevel = (Spinner)findViewById(R.id.spinnerLevel);
         String[] itemsLevel = new String[]{"Reaction", "Interaction", "Expasion", "Remixin"};
         ArrayAdapter<String> adapterLevel = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, itemsLevel);
@@ -91,6 +94,12 @@ public class MainActivity extends ActionBarActivity {
     public void showShare(View view) {
 
         Intent intent = new Intent(this, ShareActivity.class);
+        startActivity(intent);
+    }
+
+    public void showHistory2(View view) {
+
+        Intent intent = new Intent(this, HistoryActivity.class);
         startActivity(intent);
     }
 

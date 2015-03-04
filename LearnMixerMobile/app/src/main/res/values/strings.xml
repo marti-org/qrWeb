@@ -58,5 +58,18 @@
     <string name="addUser">Add user</string>
     <string name="shareWith">Share with a class</string>
     <string name="postToSocial">Postu tu social network</string>
+    <string name="versionHistory">Version history</string>
+    <string name="copies">Copies</string>
+    <string name="copy1">Copy 1, Juhan Kaalikas, 20.01.2015</string>
+    <string name="copy2">Copy 2, Malle Juurikas, 10.02.2014</string>
+    <string name="copy3">Copy 3, Tiina Tamm, 02.03.2014</string>
+    <string name="branches">Branches</string>
+    <string name="branche1">Version 1, Juhan Maasikas, 10.01.2015</string>
+    <string name="branche2">Version 2, Reimo Kartul, 10.04.2012</string>
+    <string name="branche3">Version 3, Mihkel Kivi, 12.09.2011</string>
+    <string name="GoTochapterOne">Go to chapter 1</string>
+    <string name="help">Help</string>
+    <string name="logOut">Log out</string>
+
 
 </resources>

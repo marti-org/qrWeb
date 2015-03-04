@@ -28,9 +28,6 @@
         android:id="@+id/textView"
         android:layout_gravity="center_horizontal"
         android:textSize="40sp"
-
-        android:clickable="true"
-        android:onClick="showHistory"
         />
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -65,26 +62,11 @@
             android:onClick="showHistory"
         />
 
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/txvHelp"
-            android:gravity="center"
-            />
-
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/txvLogOut"
-            android:gravity="center"
-            />
-
     </LinearLayout>
 
 
     <!--    Math mouth    -->
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -294,7 +276,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/chapterOne"
+        android:text="@string/GoTochapterOne"
         android:textSize="30sp"
         android:onClick="showChapterOne"
     />
@@ -309,12 +291,17 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/SugestedColection"
         android:id="@+id/SugestedColection"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        />
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="3sp"
+    android:layout_marginBottom="3sp"
     android:orientation="horizontal">
 
     <TextView
@@ -358,6 +345,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
         android:orientation="horizontal">
 
         <TextView
@@ -399,6 +388,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
         android:orientation="horizontal">
 
         <TextView
@@ -441,12 +432,16 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/SugestedResources"
         android:id="@+id/SugestedResources"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
         android:textSize="30sp" />
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
         android:orientation="horizontal">
 
         <TextView
@@ -491,6 +486,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
         android:orientation="horizontal">
 
         <TextView
@@ -535,6 +532,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
         android:orientation="horizontal">
 
         <TextView
@@ -581,12 +580,16 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/Tools"
         android:id="@+id/Tools"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
         android:textSize="30sp" />
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
         android:orientation="horizontal">
 
         <ImageView
@@ -609,6 +612,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
         android:orientation="horizontal">
 
         <ImageView
@@ -630,6 +635,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
         android:orientation="horizontal">
 
         <ImageView
@@ -653,6 +660,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
         android:orientation="horizontal">
 
         <ImageView
@@ -667,6 +676,8 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/Version"
+            android:onClick="showHistory2"
+            android:clickable="true"
             android:textSize="20sp" />
 
     </LinearLayout>
