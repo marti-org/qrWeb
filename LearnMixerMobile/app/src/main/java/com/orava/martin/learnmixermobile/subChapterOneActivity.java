@@ -1,39 +1,26 @@
 package com.orava.martin.learnmixermobile;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.MediaController;
-import android.widget.VideoView;
 
 
-public class ChapterOneActivity extends ActionBarActivity {
+public class subChapterOneActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chapter_one);
-
-        VideoView vidView = (VideoView)findViewById(R.id.myVideo);
-        String vidAddress = "https://archive.org/download/ksnn_compilation_master_the_internet/ksnn_compilation_master_the_internet_512kb.mp4";
-        Uri vidUri = Uri.parse(vidAddress);
-        vidView.setVideoURI(vidUri);
-        vidView.start();
-
-        MediaController vidControl = new MediaController(this);
-        vidControl.setAnchorView(vidView);
-        vidView.setMediaController(vidControl);
+        setContentView(R.layout.activity_sub_chapter_one);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_chapter_one, menu);
+        getMenuInflater().inflate(R.menu.menu_sub_chapter_one, menu);
         return true;
     }
 
@@ -52,13 +39,10 @@ public class ChapterOneActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void showMainPage(View view){
-        Intent intent = new Intent(this,MainActivity.class);
+    public void showChapterOne(View view) {
+
+        Intent intent = new Intent(this, ChapterOneActivity.class);
         startActivity(intent);
     }
 
-    public void showSubChapterOne(View view){
-        Intent intent = new Intent(this,subChapterOneActivity.class);
-        startActivity(intent);
-    }
 }

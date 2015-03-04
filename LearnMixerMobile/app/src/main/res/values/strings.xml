@@ -23,4 +23,7 @@
     <string name="title_activity_chapter_one">ChapterOneActivity</string>
     <string name="chapterOne">Chapter 1</string>
     <string name="subChapterOne">Sub Chapter One</string>
+    <string name="myNotes">Your Notes</string>
+    <string name="title_activity_sub_chapter_one">subChapterOneActivity</string>
+    <string name="SubChapterOneText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod convallis dui, vitae tincidunt dolor efficitur gravida. Maecenas sed lorem et dui venenatis commodo. Quisque ut tempus felis, sit amet porttitor augue. Praesent pharetra id ipsum vitae posuere. Pellentesque dapibus, dui sed tincidunt accumsan, arcu urna finibus turpis, ac cursus arcu sapien id sem. Etiam tempus dolor in tortor scelerisque faucibus.</string>
 </resources>

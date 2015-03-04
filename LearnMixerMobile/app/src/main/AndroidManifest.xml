@@ -26,6 +26,10 @@
             android:name=".ChapterOneActivity"
             android:label="@string/title_activity_chapter_one" >
         </activity>
+        <activity
+            android:name=".subChapterOneActivity"
+            android:label="@string/title_activity_sub_chapter_one" >
+        </activity>
     </application>
 
 </manifest>
