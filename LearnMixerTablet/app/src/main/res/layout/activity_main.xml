@@ -1,0 +1,689 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<ScrollView
+    android:id="@+id/SrollId"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/titleLearnMixer"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40sp"
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+     >
+
+
+        <EditText
+            android:id="@+id/edSearch"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSearch"
+        />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageButton"
+            android:contentDescription="@string/imgBtnHistory"
+            android:src="@drawable/bell"
+            android:scaleType="centerInside"
+            android:onClick="showHistory"
+        />
+
+    </LinearLayout>
+
+
+    <!--    Math mouth    -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/MathMouth"
+        android:textSize="40sp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txvDescription"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:lines="3"
+            android:id="@+id/editText"
+            android:layout_weight="3" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txvSubject"
+            android:gravity="center"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerSubject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_weight="3" />
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txvTopic"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txvAgeGroup"
+            android:gravity="center"
+            />
+
+        <SeekBar
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:max="99" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txvLicence"
+            android:gravity="center"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerLicence"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_weight="3" />
+        />
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txvTag"
+            android:gravity="center"
+            />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+        >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txvTag"
+
+             />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txvTag"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txvTag"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txvLevel"
+            android:gravity="center"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerLevel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_weight="3" />
+        />
+
+
+    </LinearLayout>
+
+
+
+    <!-- End first sreacn ////////////////////////////////////
+    -->
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/GoTochapterOne"
+        android:textSize="30sp"
+        android:onClick="showChapterOne"
+    />
+
+    <!-- Sugested ////////////////////////////////////
+
+    -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/SugestedColection"
+        android:id="@+id/SugestedColection"
+        android:textSize="30sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3sp"
+    android:layout_marginBottom="3sp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/colectionName"
+        android:textSize="20sp"
+
+     />
+
+    <ImageView
+        android:layout_width="25dp"
+
+        android:layout_height="fill_parent"
+        android:src="@drawable/lock"
+        />
+    <ImageView
+        android:layout_width="25dp"
+
+        android:layout_height="fill_parent"
+        android:src="@drawable/clock"
+        />
+    <ImageView
+        android:layout_width="25dp"
+
+        android:layout_height="fill_parent"
+        android:src="@drawable/heard"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/colectionCount1"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/colectionName"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/lock"
+            />
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/clock"
+            />
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/heard"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/colectionCount2"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/colectionName"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/unlock"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/heard"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/colectionCount3"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <!-- Recouses ////////////////////////////////////
+
+    -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/SugestedResources"
+        android:id="@+id/SugestedResources"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:textSize="30sp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/ResourcesName"
+            android:textSize="20sp"
+            android:onClick="showLearningSource"
+            android:clickable="true"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/lock"
+            />
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/clock"
+            />
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/heard"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/colectionCount1"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/ResourcesName"
+            android:textSize="20sp"
+            android:onClick="showLearningSource"
+            android:clickable="true"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/lock"
+            />
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/clock"
+            />
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/heard"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/colectionCount2"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/ResourcesName"
+            android:textSize="20sp"
+            android:onClick="showLearningSource"
+            android:clickable="true"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/unlock"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/heard"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/colectionCount3"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+    <!-- Tools///////////////////////////////////
+
+   -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Tools"
+        android:id="@+id/Tools"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:textSize="30sp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/branch"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/Branch"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/copy"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/Copy"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/share"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/Share"
+            android:onClick="showShare"
+            android:clickable="true"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:layout_marginBottom="3sp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/version"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/Version"
+            android:onClick="showHistory2"
+            android:clickable="true"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
